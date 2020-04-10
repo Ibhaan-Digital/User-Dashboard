@@ -10212,3 +10212,53 @@ body {
 .sb-sidenav-light .sb-sidenav-footer {
   background-color: #e9ecef;
 }
+
+/***************my styles*********************/
+
+/***************my styles*********************/
+
+.plant-namae{
+    color: #fff;
+    margin: 0 auto;
+}
+
+.drop-remove{
+    padding: 0;
+}
+
+.drop-remove .dropdown-divider{
+    margin: 0;
+}
+
+.note-unseen{
+    background: blue;
+}
+
+.note-seen{
+    background: #fff;
+}
+
+.drop-remove .note-unseen:hover,
+.drop-remove .note-unseen:focus {
+    background-color: #0000ce;
+}
+
+.drop-remove .note-seen:hover,
+.drop-remove .note-seen:focus {
+    background-color: #cccccc;
+}
+
+/***************my styles*********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
