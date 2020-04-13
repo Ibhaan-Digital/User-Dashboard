@@ -10250,9 +10250,26 @@ body {
 
 /***************my styles*********************/
 
+/***************my button styles*********************/
 
+.edit-icon{
+  margin: 0 15px;
+  font-size: 15px;
+}
 
+.btn-anp{
+background-color: DodgerBlue;
+border: none;
+color: white;
+padding: 12px 16px;
+font-size: 16px;
+cursor: pointer;
+}
 
+.btn-anp:hover{
+  background-color: #2c83d8;
+}
+/***************my button styles*********************/
 
 
 
