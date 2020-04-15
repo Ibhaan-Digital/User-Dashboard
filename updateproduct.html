@@ -125,135 +125,97 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Product</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Dashboard / Product</li>
+                            <li class="breadcrumb-item active">Dashboard / Product / Update Product</li>
                         </ol>
                     
 <!-----------------------------------------------table 1 start----------------------------------------------------->
 
                         <div class="card mb-4">
-                            <div class="card-header"><a href="addproduct.html"><button class="btn-anp"><i class="fas fa-plus-circle"></i> Add New Product</button></a></div>
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Update Product</div>
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable4" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th>Sl. no.</th>
-                                                <th>Product ID</th>
-                                                <th>Product Name</th>
-                                                <th>Approved</th>
-                                                <th>View Details</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Sl. no.</th>
-                                                <th>Product ID</th>
-                                                <th>Product Name</th>
-                                                <th>Approved</th>
-                                                <th>View Details</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr>
-                                                <td>0001</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Swab</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0002</td>
-                                                <td>AA001FGHA91338</td>
-                                                <td>Swab</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0003</td>
-                                                <td>AA001FGWT25938</td>
-                                                <td>Swab</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0004</td>
-                                                <td>AA001TCHE89778</td>
-                                                <td>QR Code</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0005</td>
-                                                <td>AA001FGWX72932</td>
-                                                <td>Ribbon</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Swab</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Ribbon</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Swab</td>
-                                                <td>Approved</td>
-                                                <td><a href="="updateproduct.html">#">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHA91338</td>
-                                                <td>Swab</td>
-                                                <td>Pending</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGWT25938</td>
-                                                <td>Printer head</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001TCHE89778</td>
-                                                <td>QR Code</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGWX72932</td>
-                                                <td>Ribbon</td>
-                                                <td>Pending</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Swab</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Ribbon</td>
-                                                <td>Pending</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                              <div class="container-addnew-p">
+                                  <form action="#">
+                                    <div class="row-add-p">
+                                      <div class="col-25 add-p25">
+                                        <label for="PID">Product ID</label>
+                                      </div>
+                                      <div class="col-75 add-p75">
+                                        <input type="text" id="fname" name="firstname" placeholder="Comes from DB">
+                                      </div>
+                                    </div>
+                                    <div class="row-add-p">
+                                      <div class="col-25 add-p25">
+                                        <label for="Product-name">Product Name</label>
+                                      </div>
+                                      <div class="col-75 add-p75">
+                                        <input type="text" id="lname" name="lastname" placeholder="Product ABC">
+                                      </div>
+                                    </div>
+                                    <div class="row-add-p">
+                                      <div class="col-25 add-p25">
+                                        <label for="ptype">Product Type</label>
+                                      </div>
+                                      <div class="col-75 add-p75">
+                                        <select id="Producy-Type" name="Product">
+                                          <option value="biobag">Bio Bags</option>
+                                          <option value="fmcg">FMCG</option>
+                                          <option value="nandinimilk">Nandini Milk</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                   <div class="row-add-p">
+                                      <div class="col-25 add-p25">
+                                        <label for="Porduct-sub-type">Product Sub Type</label>
+                                      </div>
+                                      <div class="col-75 add-p75">
+                                        <input type="text" id="P-sub-type" name="lastname" placeholder="Enter Subtype">
+                                      </div>
+                                    </div>
+                                      <div class="row-add-p">
+                                      <div class="col-25 add-p25">
+                                        <label for="Product-unit">Product Unit</label>
+                                      </div>
+                                        <div class="col-75 add-p75">
+                                        <select id="Product-unit" name="lastname">
+                                          <option value="Ltr">Ltr</option>
+                                          <option value="Kg">Kg</option>
+                                          <option value="piece">Piece</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                      <div class="row-add-p">
+                                      <div class="col-25 add-p25">
+                                        <label for="Product-color">Product Color</label>
+                                      </div>
+                                          <div class="col-75 add-p75">
+                                        <select id="product-color" name="lastname">
+                                          <option value="red">Red</option>
+                                          <option value="blue">Blue</option>
+                                          <option value="green">Green</option>
+                                          <option value="none">None</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                      <div class="row-add-p">
+                                      <div class="col-25 add-p25">
+                                        <label for="Product-s-image">Product sample Image</label>
+                                      </div>
+                                      <div class="col-75 add-p75">
+                                        <input type="text" id="product-sample-image" name="lastname" placeholder="image upload">
+                                      </div>
+                                    </div>
+                                      <div class="row-add-p">
+                                      <div class="col-25 add-p25">
+                                        <label for="certification">Certification</label>
+                                      </div>
+                                      <div class="col-75 add-p75">
+                                        <input type="text" id="certificate" name="lastname" placeholder="Single image / Multiple image / pdf upload">
+                                      </div>
+                                    </div>
+                                      <div class="product-bt-cntr">
+                                        <a href="#" class="btn-add-p-update" onclick="alert('Updated Sucessfully')">Update</a>
+                                      </div>
+                                  </form>
                                 </div>
                             </div>
                         </div>
