@@ -10,6 +10,17 @@
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
         <script src="js/all.min.js" crossorigin="anonymous"></script>
+        <style>
+            .table-img-sz img{
+                width: 25px;
+                height: 25px;
+                margin-right: 7px;
+            }
+            
+            .product-bt-right{
+                text-align: right;
+            }
+        </style>
     </head>
     
     <body class="sb-nav-fixed">
@@ -146,126 +157,130 @@
 <!-----------------------------------------------table 1 start----------------------------------------------------->
 
                         <div class="card mb-4">
-                            <div class="card-header"><a href="addproduct.html"><button class="btn-anp"><i class="fas fa-plus-circle"></i> Add New Product</button></a></div>
+                            
+                            
+                            <div class="container-addnew-p">
+                                <form action="#">
+                                    <div class="row-add-p">
+                                        <div class="col-25 add-p25">
+                                            <label for="PID">Product Type</label>
+                                        </div>
+                                        <div class="col-25 add-p25">
+                                            <input type="text" id="fname" name="firstname" placeholder="Enter product">
+                                        </div>
+<!--
+                                        <div class="col-25 add-p25">
+                                            <label for="PID">Product Type</label>
+                                        </div>
+-->
+                                        <div class="product-bt-right">
+                                            <a href="#" class="btn-add-p-create" onclick="alert('Created Succefully')">Create</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <div class="card-header">
+                                <i class="fas fa-table mr-1"></i>Product Type List
+                            </div>
+                            
                             <div class="card-body">
+                                
+                                
+                                
+                                        
+                                        
+                                        
                                 <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable4" width="100%" cellspacing="0">
+                                    <table class="table table-bordered" id="dataTable9" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Sl. no.</th>
+                                                <th>Product Type ID</th>
                                                 <th>Product ID</th>
-                                                <th>Product Name</th>
-                                                <th>Approved</th>
-                                                <th>View Details</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>Sl. no.</th>
+                                                <th>Product Type ID</th>
                                                 <th>Product ID</th>
-                                                <th>Product Name</th>
-                                                <th>Approved</th>
-                                                <th>View Details</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
                                             </tr>
                                         </tfoot>
-                                        <tbody>
+                                        <tbody class="table-img-sz">
                                             <tr>
                                                 <td>0001</td>
                                                 <td>AA001FGHE21378</td>
-                                                <td>Swab</td>
                                                 <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
+                                                <td>
+                                                    <a href="#"><img src="images/edit.png"></a>
+                                                    <a href="#"><img src="images/delete.png"></a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>0002</td>
                                                 <td>AA001FGHA91338</td>
-                                                <td>Swab</td>
                                                 <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
+                                                <td>
+                                                    <a href="#"><img src="images/edit.png"></a>
+                                                    <a href="#"><img src="images/delete.png"></a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>0003</td>
                                                 <td>AA001FGWT25938</td>
-                                                <td>Swab</td>
                                                 <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
+                                                <td>
+                                                    <a href="#"><img src="images/edit.png"></a>
+                                                    <a href="#"><img src="images/delete.png"></a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>0004</td>
                                                 <td>AA001TCHE89778</td>
-                                                <td>QR Code</td>
                                                 <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
+                                                <td>
+                                                    <a href="#"><img src="images/edit.png"></a>
+                                                    <a href="#"><img src="images/delete.png"></a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>0005</td>
                                                 <td>AA001FGWX72932</td>
-                                                <td>Ribbon</td>
                                                 <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
+                                                <td>
+                                                    <a href="#"><img src="images/edit.png"></a>
+                                                    <a href="#"><img src="images/delete.png"></a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>0006</td>
                                                 <td>AA001FGHE21378</td>
-                                                <td>Swab</td>
                                                 <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
+                                                <td>
+                                                    <a href="#"><img src="images/edit.png"></a>
+                                                    <a href="#"><img src="images/delete.png"></a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>0006</td>
                                                 <td>AA001FGHE21378</td>
-                                                <td>Ribbon</td>
                                                 <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
+                                                <td>
+                                                    <a href="#"><img src="images/edit.png"></a>
+                                                    <a href="#"><img src="images/delete.png"></a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>0006</td>
                                                 <td>AA001FGHE21378</td>
-                                                <td>Swab</td>
                                                 <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHA91338</td>
-                                                <td>Swab</td>
-                                                <td>Pending</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGWT25938</td>
-                                                <td>Printer head</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001TCHE89778</td>
-                                                <td>QR Code</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGWX72932</td>
-                                                <td>Ribbon</td>
-                                                <td>Pending</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Swab</td>
-                                                <td>Approved</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Ribbon</td>
-                                                <td>Pending</td>
-                                                <td><a href="updateproduct.html">View Details</a></td>
+                                                <td>
+                                                    <a href="#"><img src="images/edit.png"></a>
+                                                    <a href="#"><img src="images/delete.png"></a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -316,11 +331,11 @@
         <script>
             $(document).ready(function () {
                 //start
-                $('#dataTable4').DataTable({
+                $('#dataTable9').DataTable({
                   "aaSorting": [],
                   columnDefs: [{
                   orderable: false,
-                  targets: 4
+                  targets: 3
                   }]
                 });
                //end

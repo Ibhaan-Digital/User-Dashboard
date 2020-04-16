@@ -10368,6 +10368,49 @@ input[type=submit]:hover {
     height: 30px;
 }
 
+.top-nav-bar img{
+    width: 25px;
+    height: 25px;
+}
+
+.menu-btn img{
+    width: 25px;
+    height: 25px;
+}
+
+/***************crop image styles*********************/
+
+.image-only-crop label.cabinet{
+	display: block;
+	cursor: pointer;
+}
+
+.image-only-crop label.cabinet input.file{
+	position: relative;
+	height: 100%;
+	width: auto;
+	opacity: 1;
+	-moz-opacity: 1;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=1);
+  margin-top:-30px;
+}
+
+.image-only-crop #upload-demo{
+	width: 250px;
+	height: 250px;
+  padding-bottom:25px;
+}
+.image-only-crop figure figcaption {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    width: 100%;
+    padding-left: 9px;
+    padding-bottom: 5px;
+    text-shadow: 0 0 10px #000;
+}
+/***************crop image styles*********************/
+
 /***************my button styles*********************/
 
 @media only screen and (max-width: 768px) {
