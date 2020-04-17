@@ -10340,10 +10340,11 @@ input[type=submit]:hover {
 }
 .btn-add-p-create:hover{
     color: #fff;
+    background-color: #00a705;
     text-decoration: none;
 }
 .btn-add-p-update{
-  background-color: orange;
+  background-color: #ffa500;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -10356,6 +10357,25 @@ input[type=submit]:hover {
 }
 .btn-add-p-update:hover{
     color: #fff;
+    background-color: #ffa500;
+    text-decoration: none;
+}
+
+.btn-add-p-cancel{
+  background-color: #ff6464;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn-add-p-cancel:hover{
+    color: #fff;
+    background-color: #ff3a3a;
     text-decoration: none;
 }
 
