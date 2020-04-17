@@ -10,17 +10,6 @@
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
         <script src="js/all.min.js" crossorigin="anonymous"></script>
-        <style>
-            .table-img-sz img{
-                width: 25px;
-                height: 25px;
-                margin-right: 7px;
-            }
-            
-            .product-bt-right{
-                text-align: right;
-            }
-        </style>
     </head>
     
     <body class="sb-nav-fixed">
@@ -40,7 +29,7 @@
                     </div>
                 </div>
             </form>
-            
+
             <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle top-nav-bar" id="userDropdown" href="#" role="button" 
@@ -57,7 +46,6 @@
                         <a class="dropdown-item note-seen" href="#">Order status updates</a>
                     </div>
                 </li>
-                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle top-nav-bar" id="userDropdown" href="#" role="button" 
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,8 +74,7 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading"></div>
-                            <img src="images/Plastobag.png" style="width: 100px;height: 100px;border-radius: 50%;margin: 0 auto 16px 16px; border: 2px solid white;">
+                            <img src="images/icon_client.png" style="width: 100px;height: 100px;border-radius: 50%;margin: 40px auto 40px 16px;">
                             <a class="nav-link" href="index.html">
                                 <div class="sb-nav-link-icon">
                                     <img src="images/dashboard.png">
@@ -149,141 +136,71 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Product</h1>
+                        <h1 class="mt-4">Request Codes</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Dashboard / Product</li>
+                            <li class="breadcrumb-item active brdcmb">
+                                <a href="index.html">Dashboard</a>&nbsp;/&nbsp;<a href="qrcode.html">QR Code</a>&nbsp;/&nbsp;<a href="#">Request code</a>
+                            </li>
                         </ol>
+                        
+<!---------------------------------------------Conformation msg start---------------------------------------------->
+                        
+                        <div class="card mb-4 rqr-msg-unhide">
+                            <div class="card-body">Your request has been successfully generated. You will be redirected to dashboard shortly, please wait.</div>
+                        </div>
+
+<!---------------------------------------------Conformation msg end---------------------------------------------->
                     
 <!-----------------------------------------------table 1 start----------------------------------------------------->
 
                         <div class="card mb-4">
-                            
-                            
-                            <div class="container-addnew-p">
-                                <form action="#">
-                                    <div class="row-add-p">
-                                        <div class="col-25 add-p25">
-                                            <label for="PID">Product Type</label>
-                                        </div>
-                                        <div class="col-25 add-p25">
-                                            <input type="text" id="fname" name="firstname" placeholder="Enter product">
-                                        </div>
-<!--
-                                        <div class="col-25 add-p25">
-                                            <label for="PID">Product Type</label>
-                                        </div>
--->
-                                        <div class="product-bt-right">
-                                            <a href="#" class="btn-add-p-create" onclick="alert('Created Succefully')">Create</a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            
-                            <div class="card-header">
-                                <i class="fas fa-table mr-1"></i>Product Type List
-                            </div>
-                            
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Create Product</div>
                             <div class="card-body">
-                                
-                                
-                                
+                                <div class="container-addnew-p">
+                                    <form action="#">
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="ptype">Product</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="Producy-Type" name="Product">
+                                                    <option value="biobag">Bio Bags</option>
+                                                    <option value="fmcg">FMCG</option>
+                                                    <option value="nandinimilk">Nandini Milk</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                         
-                                        
-                                        
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable9" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th>Product Type ID</th>
-                                                <th>Product ID</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Product Type ID</th>
-                                                <th>Product ID</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody class="table-img-sz">
-                                            <tr>
-                                                <td>0001</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <a href="#"><img src="images/edit.png"></a>
-                                                    <a href="#"><img src="images/delete.png"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>0002</td>
-                                                <td>AA001FGHA91338</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <a href="#"><img src="images/edit.png"></a>
-                                                    <a href="#"><img src="images/delete.png"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>0003</td>
-                                                <td>AA001FGWT25938</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <a href="#"><img src="images/edit.png"></a>
-                                                    <a href="#"><img src="images/delete.png"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>0004</td>
-                                                <td>AA001TCHE89778</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <a href="#"><img src="images/edit.png"></a>
-                                                    <a href="#"><img src="images/delete.png"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>0005</td>
-                                                <td>AA001FGWX72932</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <a href="#"><img src="images/edit.png"></a>
-                                                    <a href="#"><img src="images/delete.png"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <a href="#"><img src="images/edit.png"></a>
-                                                    <a href="#"><img src="images/delete.png"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <a href="#"><img src="images/edit.png"></a>
-                                                    <a href="#"><img src="images/delete.png"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>0006</td>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Approved</td>
-                                                <td>
-                                                    <a href="#"><img src="images/edit.png"></a>
-                                                    <a href="#"><img src="images/delete.png"></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="machineId">Machine ID</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="machineId" name="lastname">
+                                                    <option value="M0001">M0001</option>
+                                                    <option value="M0002">M0002</option>
+                                                    <option value="M0003">M0003</option>
+                                                    <option value="M0004">M0004</option>
+                                                    <option value="M0005">M0005</option>
+                                                    <option value="M0006">M0006</option>
+                                                    <option value="M0007">M0007</option>
+                                                    <option value="M0008">M0008</option>
+                                                    <option value="M0009">M0009</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="qrquantity">No. of QR Code</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <input type="text" id="certificate" name="lastname" placeholder="In multiples of 1,00,000">
+                                            </div>
+                                        </div>
+                                        <div class="product-bt-cntr">
+                                            <a href="#" class="btn-add-p-create" onclick="alert('Request Sent')">Send Request</a>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -322,25 +239,10 @@
         <script src="js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-        <script src="js/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/datatables-demo.js"></script>
-        <script>
-            $(document).ready(function () {
-                //start
-                $('#dataTable9').DataTable({
-                  "aaSorting": [],
-                  columnDefs: [{
-                  orderable: false,
-                  targets: 3
-                  }]
-                });
-               //end
-          
-            });
-        </script>
+        
+        
     </body>
 </html>
+

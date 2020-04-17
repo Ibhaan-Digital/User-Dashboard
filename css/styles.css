@@ -10324,7 +10324,7 @@ input[type=submit]:hover {
 }
 
 
-
+/*****************custom css mani starts******************/
 
 .btn-add-p-create {
   background-color: #4CAF50;
@@ -10410,6 +10410,61 @@ input[type=submit]:hover {
     text-shadow: 0 0 10px #000;
 }
 /***************crop image styles*********************/
+
+/***************conf msg styles start*********************/
+
+.conf-msg-hide{
+    display: none;
+}
+
+.conf-msg-unhide{
+    display: block;
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+}
+/***************conf msg styles end*********************/
+
+/***************update msg styles start*********************/
+
+.upd-msg-hide{
+    display: none;
+}
+
+.upd-msg-unhide{
+    display: block;
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+}
+/***************update msg styles end*********************/
+
+/***************qrcode msg styles start*********************/
+
+.rqr-msg-hide{
+    display: none;
+}
+
+.rqr-msg-unhide{
+    display: block;
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+}
+/***************qrcode msg styles end*********************/
+
+/***************my button styles*********************/
+
+.brdcmb a{
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.brdcmb a:hover{
+    color: #000000;
+}
+
+/***************my button styles*********************/
 
 /***************my button styles*********************/
 
