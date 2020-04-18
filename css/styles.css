@@ -10344,7 +10344,7 @@ input[type=submit]:hover {
     text-decoration: none;
 }
 .btn-add-p-update{
-  background-color: #ffa500;
+  background-color: #f4b849;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -10473,7 +10473,7 @@ input[type=submit]:hover {
 }
 /***************qrcode msg styles end*********************/
 
-/***************my button styles*********************/
+/***************breadcrumb styles start*********************/
 
 .brdcmb a{
     text-decoration: none;
@@ -10484,7 +10484,7 @@ input[type=submit]:hover {
     color: #000000;
 }
 
-/***************my button styles*********************/
+/***************breadcrumb styles end*********************/
 
 /***************my button styles*********************/
 

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Admin - Plasto</title>
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+        <script src="js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body class="sb-nav-fixed">
+        
+<!---------------------------------------Top Navbar Start----------------------------------------------->
+
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">SCANTRACK</a>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 menu-btn" id="sidebarToggle" href="#">
+                <img src="images/menu.png">
+            </button>
+            <p class="plant-namae">PLASTO MANUFACTURING PLANT</p>
+            
+            <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <div class="input-group-append">
+                    </div>
+                </div>
+            </form>
+
+            <ul class="navbar-nav ml-auto ml-md-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle top-nav-bar" id="userDropdown" href="#" role="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/notification.png">&nbsp;<span class="txthid">Notification</span> 
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right drop-remove" aria-labelledby="userDropdown">
+                        <a class="dropdown-item note-unseen" href="#">Updates on order</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item note-unseen" href="#">Product updated succeesfuly</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item note-unseen" href="#">Invoice received</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item note-seen" href="#">Order status updates</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle top-nav-bar" id="userDropdown" href="#" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/user.png">&nbsp;<span class="txthid">Manish</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Update Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Password Reset</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            
+        </nav>
+        
+<!---------------------------------------Top Navbar End-------------------------------------------------->
+        
+<!------------------------------------entire page start---------------------------------------------------->
+        
+<!---------------------------------------Side Navbar Start----------------------------------------------->
+
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <img src="images/icon_client.png" style="width: 100px;height: 100px;border-radius: 50%;margin: 40px auto 40px 16px;">
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/dashboard.png">
+                                </div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link" href="product.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/product.png">
+                                </div>
+                                Product
+                            </a>
+                            <a class="nav-link" href="qrcode.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/qr-code.png">
+                                </div>
+                                QR Code
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/consumables.png">
+                                </div>
+                                Consumables
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/settings.png">
+                                </div>
+                                Settings
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#">Company profile</a>
+                                    <a class="nav-link" href="#">point Of Contact</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/invoice.png">
+                                </div>
+                                Invoice
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/logout.png">
+                                </div>
+                                LogOut
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        
+<!-----------------------------------------------Side Navbar End------------------------------------------------>
+            
+<!-----------------------------------------------Body content start----------------------------------------------->
+        
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">Request Codes</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active brdcmb">
+                                <a href="index.html">Dashboard</a>&nbsp;/&nbsp;<a href="qrcode.html">QR Code</a>&nbsp;/&nbsp;<a href="#">Request code</a>
+                            </li>
+                        </ol>
+                        
+<!---------------------------------------------Conformation msg start---------------------------------------------->
+                        
+                        <div class="card mb-4 rqr-msg-unhide">
+                            <div class="card-body">Your request has been successfully generated. You will be redirected to dashboard shortly, please wait.</div>
+                        </div>
+
+<!---------------------------------------------Conformation msg end---------------------------------------------->
+                    
+<!-----------------------------------------------table 1 start----------------------------------------------------->
+
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Create Product</div>
+                            <div class="card-body">
+                                <div class="container-addnew-p">
+                                    <form action="#">
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="ptype">Company Name</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="Producy-Type" name="Product">
+                                                    <option value="plasto">Plasto</option>
+                                                    <option value="pearl">Pearl</option>
+                                                    <option value="narendra">Narendra Plastic</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="ptype">Product</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="Producy-Type" name="Product">
+                                                    <option value="biobag">Bio Bags</option>
+                                                    <option value="fmcg">FMCG</option>
+                                                    <option value="nandinimilk">Nandini Milk</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="machineId">Machine ID</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="machineId" name="lastname">
+                                                    <option value="M0001">M0001</option>
+                                                    <option value="M0002">M0002</option>
+                                                    <option value="M0003">M0003</option>
+                                                    <option value="M0004">M0004</option>
+                                                    <option value="M0005">M0005</option>
+                                                    <option value="M0006">M0006</option>
+                                                    <option value="M0007">M0007</option>
+                                                    <option value="M0008">M0008</option>
+                                                    <option value="M0009">M0009</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="qrquantity">No. of QR Code</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <input type="text" id="certificate" name="lastname" placeholder="In multiples of 1,00,000">
+                                            </div>
+                                        </div>
+                                        <div class="product-bt-cntr">
+                                            <a href="#" class="btn-add-p-create" onclick="alert('Request Sent')">Request</a>
+                                            <a href="qrcode.html" class="btn-add-p-cancel">Cancel</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+<!-----------------------------------------------table 1 end------------------------------------------------------->
+
+                    </div>
+
+                </main>
+            
+<!-----------------------------------------------footer start------------------------------------------------------>
+
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ScanTrack 2020</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            
+<!-----------------------------------------------footer end--------------------------------------------------------->
+            
+            </div>
+            
+<!-----------------------------------------------Body content end----------------------------------------------->
+
+        </div>
+        
+<!-----------------------------------------------entire page end---------------------------------------------------->
+        
+        <script src="js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        
+        
+    </body>
+</html>
+
