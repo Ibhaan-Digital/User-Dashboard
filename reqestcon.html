@@ -137,189 +137,156 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Consumables</h1>
+                        <h1 class="mt-4">Request Consumables</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active brdcmb">
-                                <a href="index.html">Dashboard</a>&nbsp;/&nbsp;<a href="#">Consumables</a>
+                                <a href="index.html">Dashboard</a>&nbsp;/&nbsp;<a href="consumables.html">Consumables</a>&nbsp;/&nbsp;<a href="#">Request Consumables</a>
                             </li>
                         </ol>
+                        
+<!---------------------------------------------Conformation msg start---------------------------------------------->
+                        
+                        <div class="card mb-4 cons-msg-unhide">
+                            <div class="card-body">Your request has been sent successfully. You will be redirected to dashboard shortly, please wait.</div>
+                        </div>
+
+<!---------------------------------------------Conformation msg end---------------------------------------------->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="container-addnew-p">
+                                    <form action="#">
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <select id="machineId" name="lastname">
+                                                    <option value="M0001">M0001</option>
+                                                    <option value="M0002">M0002</option>
+                                                    <option value="M0003">M0003</option>
+                                                    <option value="M0004">M0004</option>
+                                                    <option value="M0005">M0005</option>
+                                                    <option value="M0006">M0006</option>
+                                                    <option value="M0007">M0007</option>
+                                                    <option value="M0008">M0008</option>
+                                                    <option value="M0009">M0009</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-25 add-p25">
+                                                <input type="text" id="fname" name="firstname" placeholder="Consumable List">
+                                            </div>
+                                            <div class="col-25 add-p25">
+                                                <input type="text" id="count" name="count" placeholder="Count">
+                                            </div>
+                                            <div class="col-25 add-p25 only-but-rt">
+                                                <a href="#"><button class="btn-anp"><i class="fas fa-plus-circle"></i> Add</button></a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     
 <!-----------------------------------------------table 1 start----------------------------------------------------->
 
                         <div class="card mb-4">
-                            <div class="card-header"><a href="reqestcon.html"><button class="btn-anp"><i class="fas fa-plus-circle"></i> Request Consumables</button></a></div>
+                            <div class="card-header"><a href="#"><button class="btn-anp"><i class="fas fa-plus-circle"></i> Request ID</button></a></div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable8" width="100%" cellspacing="0">
+                                    <table class="table table-bordered" id="dataTable4" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Request ID</th>
-                                                <th>Product</th>
-                                                <th>Consumable</th>
-                                                <th>No.</th>
-                                                <th>Requested Date</th>
+                                                <th>Sl. no.</th>
+                                                <th>Name</th>
+                                                <th>Machine ID</th>
+                                                <th>Rate</th>
                                                 <th>Quantity</th>
-                                                <th>Status</th>
-                                                <th>Requested By</th>
+                                                <th>Price</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>Request ID</th>
-                                                <th>Product</th>
-                                                <th>Consumable</th>
-                                                <th>No.</th>
-                                                <th>Requested Date</th>
+                                                <th>Sl. no.</th>
+                                                <th>Name</th>
+                                                <th>Machine ID</th>
+                                                <th>Rate</th>
                                                 <th>Quantity</th>
-                                                <th>Status</th>
-                                                <th>Requested By</th>
+                                                <th>Price</th>
+                                                <th>Action</th>
                                             </tr>
                                         </tfoot>
-                                        <tbody>
+                                        <tbody class="cons-del">
                                             <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
+                                                <td>0001</td>
+                                                <td>Swab</td>
+                                                <td>M0003</td>
                                                 <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
+                                                <td>5</td>
+                                                <td>50</td>
+                                                <td><a href="#"><img src="images/delete.png" ></a></td>
                                             </tr>
                                             <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
+                                                <td>0001</td>
+                                                <td>Swab</td>
+                                                <td>M0003</td>
                                                 <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
+                                                <td>5</td>
+                                                <td>50</td>
+                                                <td><a href="#"><img src="images/delete.png" ></a></td>
                                             </tr>
                                             <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
+                                                <td>0001</td>
+                                                <td>Swab</td>
+                                                <td>M0003</td>
                                                 <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
+                                                <td>5</td>
+                                                <td>50</td>
+                                                <td><a href="#"><img src="images/delete.png" ></a></td>
                                             </tr>
                                             <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
+                                                <td>0001</td>
+                                                <td>Swab</td>
+                                                <td>M0003</td>
                                                 <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
+                                                <td>5</td>
+                                                <td>50</td>
+                                                <td><a href="#"><img src="images/delete.png" ></a></td>
                                             </tr>
                                             <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
+                                                <td>0001</td>
+                                                <td>Swab</td>
+                                                <td>M0003</td>
                                                 <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
+                                                <td>5</td>
+                                                <td>50</td>
+                                                <td><a href="#"><img src="images/delete.png" ></a></td>
                                             </tr>
                                             <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
+                                                <td>0001</td>
+                                                <td>Swab</td>
+                                                <td>M0003</td>
                                                 <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
+                                                <td>5</td>
+                                                <td>50</td>
+                                                <td><a href="#"><img src="images/delete.png" ></a></td>
                                             </tr>
                                             <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
+                                                <td>0001</td>
+                                                <td>Swab</td>
+                                                <td>M0003</td>
                                                 <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
+                                                <td>5</td>
+                                                <td>50</td>
+                                                <td><a href="#"><img src="images/delete.png" ></a></td>
                                             </tr>
-                                            <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
-                                                <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
-                                                <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
-                                                <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
-                                                <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
-                                                <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
-                                                <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AA001FGHE21378</td>
-                                                <td>Markem</td>
-                                                <td>Swab, Ribbon</td>
-                                                <td>2</td>
-                                                <td>20/02/2020</td>
-                                                <td>10</td>
-                                                <td>Pending</td>
-                                                <td>Shubham</td>
-                                            </tr>
+                                            
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                        </div>
+                        
+                        <div class="product-bt-cntr">
+                            <a href="#" class="btn-add-p-create" onclick="alert('Request Sent')">&nbsp;Send Request&nbsp;</a>
+                            <a href="consumables.html" class="btn-add-p-cancel">Cancel Request</a>
                         </div>
 
 <!-----------------------------------------------table 1 end------------------------------------------------------->
@@ -362,19 +329,20 @@
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/datatables-demo.js"></script>
+<!--
         <script>
             $(document).ready(function () {
                 //start
-                $('#dataTable8').DataTable({
+                $('#dataTable4').DataTable({
                   "aaSorting": [],
                   columnDefs: [{
                   orderable: false,
-                  targets: 1
+                  targets: 4
                   }]
                 });
                //end
-          
             });
         </script>
+-->
     </body>
 </html>
