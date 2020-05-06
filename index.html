@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Admin- Plasto</title>
+        <title>Admin - Plasto</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
@@ -17,7 +17,9 @@
 
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">SCANTRACK</a>
-            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 menu-btn" id="sidebarToggle" href="#">
+                <img src="images/menu.png">
+            </button>
             <p class="plant-namae">PLASTO MANUFACTURING PLANT</p>
             
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -29,7 +31,10 @@
             
             <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell fa-fw"></i> Notification </a>
+                    <a class="nav-link dropdown-toggle top-nav-bar" id="userDropdown" href="#" role="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/notification.png">&nbsp;<span class="txthid">Notification</span> 
+                    </a>
                     <div class="dropdown-menu dropdown-menu-right drop-remove" aria-labelledby="userDropdown">
                         <a class="dropdown-item note-unseen" href="#">Updates on order</a>
                         <div class="dropdown-divider"></div>
@@ -40,8 +45,12 @@
                         <a class="dropdown-item note-seen" href="#">Order status updates</a>
                     </div>
                 </li>
+                
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i> Manish </a>
+                    <a class="nav-link dropdown-toggle top-nav-bar" id="userDropdown" href="#" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/user.png">&nbsp;<span class="txthid">Manish</span>
+                    </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Update Profile</a>
                         <div class="dropdown-divider"></div>
@@ -56,6 +65,8 @@
         
 <!---------------------------------------Top Navbar End-------------------------------------------------->
         
+<!---------------------------------------Entire page Start----------------------------------------------->
+
 <!---------------------------------------Side Navbar Start----------------------------------------------->
 
         <div id="layoutSidenav">
@@ -63,29 +74,35 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading"></div>
-                            <img src="Plastobag.png" style="width: 100px;height: 100px;border-radius: 50%;margin: 0 auto 16px 16px; border: 2px solid white;">
+                            <img src="images/icon_client.png" style="width: 100px;height: 100px;border-radius: 50%;margin: 40px auto 40px 16px;">
                             <a class="nav-link" href="index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/dashboard.png">
+                                </div>
                                 Dashboard
                             </a>
                             <a class="nav-link" href="product.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-plus-square"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/product.png">
+                                </div>
                                 Product
                             </a>
-                            <a class="nav-link" href="#"
-                                ><div class="sb-nav-link-icon"><i class="fas fa-qrcode"></i></div>
+                            <a class="nav-link" href="qrcode.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/qr-code.png">
+                                </div>
                                 QR Code
                             </a>
-                            <a class="nav-link" href="#">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            <a class="nav-link" href="consumables.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/consumables.png">
+                                </div>
                                 Consumables
                             </a>
-                            
-                            
-                            
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/settings.png">
+                                </div>
                                 Settings
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -95,14 +112,16 @@
                                     <a class="nav-link" href="#">point Of Contact</a>
                                 </nav>
                             </div>
-                            
-                            
-                            <a class="nav-link" href="#"
-                                ><div class="sb-nav-link-icon"><i class="fas fa-list-alt"></i></div>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/invoice.png">
+                                </div>
                                 Invoice
                             </a>
-                            <a class="nav-link" href="#">
-                                <div class="sb-nav-link-icon"><i class="fas fa-lock"></i></div>
+                            <a class="nav-link" href="login.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/logout.png">
+                                </div>
                                 LogOut
                             </a>
                         </div>
@@ -110,501 +129,508 @@
                 </nav>
             </div>
         
-        
 <!-----------------------------------------------Side Navbar End------------------------------------------------>
 
-<!-----------------------------------------------Body start----------------------------------------------------->
+<!-----------------------------------------------Body content start--------------------------------------------->
         
-        <div id="layoutSidenav_content">
-            <main>
-                <div class="container-fluid">
-                    <h1 class="mt-4">Client Dashboard</h1>
-                    <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Dashboard</li>
-                    </ol>
-                    
-                    <!--Cards start-->
-                    <div class="row">
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body">Request QR Code</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">Client Dashboard</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active brdcmb"><a href="#">Dashboard</a></li>
+                        </ol>
+                        
+                        <!--Cards start-->
+
+                        <!--First card start-->
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body">Request QR Code</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="requestqr.html">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Second card start-->
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">Request Consumables</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="reqestcon.html">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Third card start-->
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body">Pending Ordered List</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Fourth card start-->
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Invoice List</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-warning text-white mb-4">
-                                <div class="card-body">Request Consumables</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-success text-white mb-4">
-                                <div class="card-body">Pending Ordered List</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-danger text-white mb-4">
-                                <div class="card-body">Invoice List</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     
 <!-----------------------------------------------table 1 start----------------------------------------------------->
 
-                    <div class="card mb-4">
-                        <div class="card-header"><i class="fas fa-table mr-1"></i>Pending Orders</div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Ordered by</th>
-                                            <th>Bill number</th>
-                                            <th>Product</th>
-                                            <th>Ordered Date</th>
-                                            <th>Action</th>
-                                            <th> For More Details</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Ordered by</th>
-                                            <th>Bill number</th>
-                                            <th>Product</th>
-                                            <th>Ordered Date</th>
-                                            <th>Action</th>
-                                            <th>For More Details</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>Swab</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>AA001FGHA91338</td>
-                                            <td>Swab</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>AA001FGWT25938</td>
-                                            <td>Printer head</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>AA001TCHE89778</td>
-                                            <td>QR Code</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Airi Satou</td>
-                                            <td>AA001FGWX72932</td>
-                                            <td>Ribbon</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>Swab</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>Ribbon</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>Swab</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>AA001FGHA91338</td>
-                                            <td>Swab</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>AA001FGWT25938</td>
-                                            <td>Printer head</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>AA001TCHE89778</td>
-                                            <td>QR Code</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Airi Satou</td>
-                                            <td>AA001FGWX72932</td>
-                                            <td>Ribbon</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>Swab</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>Ribbon</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                            <td>Communicate</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Pending Orders</div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Ordered by</th>
+                                                <th>Bill number</th>
+                                                <th>Product</th>
+                                                <th>Ordered Date</th>
+                                                <th>Action</th>
+                                                <th> For More Details</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Ordered by</th>
+                                                <th>Bill number</th>
+                                                <th>Product</th>
+                                                <th>Ordered Date</th>
+                                                <th>Action</th>
+                                                <th>For More Details</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>Swab</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>AA001FGHA91338</td>
+                                                <td>Swab</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>AA001FGWT25938</td>
+                                                <td>Printer head</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>AA001TCHE89778</td>
+                                                <td>QR Code</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>AA001FGWX72932</td>
+                                                <td>Ribbon</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>Swab</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herrod Chandler</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>Ribbon</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>Swab</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>AA001FGHA91338</td>
+                                                <td>Swab</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>AA001FGWT25938</td>
+                                                <td>Printer head</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>AA001TCHE89778</td>
+                                                <td>QR Code</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>AA001FGWX72932</td>
+                                                <td>Ribbon</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>Swab</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herrod Chandler</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>Ribbon</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                                <td>Communicate</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 <!-----------------------------------------------table 1 end------------------------------------------------------->
 
 <!-----------------------------------------------table 2 start----------------------------------------------------->
 
-                    <div class="card mb-4">
-                        <div class="card-header"><i class="fas fa-table mr-1"></i>Invoice Details</div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="table2" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Company Name</th>
-                                            <th>Invoice Number</th>
-                                            <th>Invoice Date</th>
-                                            <th>View Details</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Company Name</th>
-                                            <th>Invoice Number</th>
-                                            <th>Invoice Date</th>
-                                            <th>View Details</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>AA001FGHA91338</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>AA001FGWT25938</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>AA001TCHE89778</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Airi Satou</td>
-                                            <td>AA001FGWX72932</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>AA001FGHA91338</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>AA001FGWT25938</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>AA001TCHE89778</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Airi Satou</td>
-                                            <td>AA001FGWX72932</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td>AA001FGHE21378</td>
-                                            <td>20/02/2019</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        </tbody>
-                                </table>
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Invoice Details</div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="table2" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Company Name</th>
+                                                <th>Invoice Number</th>
+                                                <th>Invoice Date</th>
+                                                <th>View Details</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Company Name</th>
+                                                <th>Invoice Number</th>
+                                                <th>Invoice Date</th>
+                                                <th>View Details</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>AA001FGHA91338</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>AA001FGWT25938</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>AA001TCHE89778</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>AA001FGWX72932</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herrod Chandler</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>AA001FGHA91338</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>AA001FGWT25938</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>AA001TCHE89778</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>AA001FGWX72932</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herrod Chandler</td>
+                                                <td>AA001FGHE21378</td>
+                                                <td>20/02/2019</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            </tbody>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
+                        </div> 
 
 <!-----------------------------------------------table 2 end------------------------------------------------------->
 
 <!-----------------------------------------------table 3 start----------------------------------------------------->
 
-                    <div class="card mb-4">
-                        <div class="card-header"><i class="fas fa-table mr-1"></i>Company Reference</div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="table3" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Company Name</th>
-                                            <th>Point Of Contact</th>
-                                            <th>Designation</th>
-                                            <th>Phone Number</th>
-                                            <th>Priority</th>
-                                            <th>View Details</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Company Name</th>
-                                            <th>Point Of Contact</th>
-                                            <th>Designation</th>
-                                            <th>Phone Number</th>
-                                            <th>Priority</th>
-                                            <th>View Details</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Plasto</td>
-                                            <td>Tiger Nixon</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>1</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Company Reference</div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="table3" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Company Name</th>
+                                                <th>Point Of Contact</th>
+                                                <th>Designation</th>
+                                                <th>Phone Number</th>
+                                                <th>Priority</th>
+                                                <th>View Details</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Company Name</th>
+                                                <th>Point Of Contact</th>
+                                                <th>Designation</th>
+                                                <th>Phone Number</th>
+                                                <th>Priority</th>
+                                                <th>View Details</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+                                                <td>Plasto</td>
+                                                <td>Tiger Nixon</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>1</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
 
-                                        <tr>
-                                            <td>Plasto</td>
-                                            <td>Garrett Winters</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>2</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Plasto</td>
-                                            <td>Ashton Cox</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>1</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Plasto</td>
-                                            <td>Cedric Kelly</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>3</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Narendra Plastic</td>
-                                            <td>Airi Satou</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>1</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pearl</td>
-                                            <td>Brielle Williamson</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>1</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pearl</td>
-                                            <td>Herrod Chandler</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>2</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Plasto</td>
-                                            <td>Tiger Nixon</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>1</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
+                                            <tr>
+                                                <td>Plasto</td>
+                                                <td>Garrett Winters</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>2</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Plasto</td>
+                                                <td>Ashton Cox</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>1</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Plasto</td>
+                                                <td>Cedric Kelly</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>3</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Narendra Plastic</td>
+                                                <td>Airi Satou</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>1</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pearl</td>
+                                                <td>Brielle Williamson</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>1</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pearl</td>
+                                                <td>Herrod Chandler</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>2</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Plasto</td>
+                                                <td>Tiger Nixon</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>1</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
 
-                                        <tr>
-                                            <td>Plasto</td>
-                                            <td>Garrett Winters</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>2</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Plasto</td>
-                                            <td>Ashton Cox</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>1</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Plasto</td>
-                                            <td>Cedric Kelly</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>3</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Narendra Plastic</td>
-                                            <td>Airi Satou</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>1</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pearl</td>
-                                            <td>Brielle Williamson</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>1</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pearl</td>
-                                            <td>Herrod Chandler</td>
-                                            <td>Officer</td>
-                                            <td>9992288845</td>
-                                            <td>2</td>
-                                            <td><a href="#">View Details</a></td>
-                                        </tr>
-                                        </tbody>
-                                </table>
+                                            <tr>
+                                                <td>Plasto</td>
+                                                <td>Garrett Winters</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>2</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Plasto</td>
+                                                <td>Ashton Cox</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>1</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Plasto</td>
+                                                <td>Cedric Kelly</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>3</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Narendra Plastic</td>
+                                                <td>Airi Satou</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>1</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pearl</td>
+                                                <td>Brielle Williamson</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>1</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pearl</td>
+                                                <td>Herrod Chandler</td>
+                                                <td>Officer</td>
+                                                <td>9992288845</td>
+                                                <td>2</td>
+                                                <td><a href="#">View Details</a></td>
+                                            </tr>
+                                            </tbody>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
+                        </div> 
 
 <!--------------------------------table 3 end---------------------------------------------------------------------->
 
-                </div>
-
-            </main>
+                    </div>
+                </main>
             
 <!-----------------------------------------------footer start------------------------------------------------------>
 
-            <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; ScanTrack 2020</div>
-                        <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ScanTrack 2020</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
             
 <!-----------------------------------------------footer end--------------------------------------------------------->
             
-        </div>
+            </div>
+
+<!-----------------------------------------------Body content end--------------------------------------------------->
+
         </div>
         
-<!-----------------------------------------------body end----------------------------------------------------->
+<!-----------------------------------------------entire page end---------------------------------------------------->
         
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
@@ -627,18 +653,17 @@
                 });
                //end
             
-            //start
-            $('#table3').DataTable({
-              "aaSorting": [],
-              columnDefs: [{
-              orderable: false,
-              targets: 3
-              }]
-            });
-           //end
+                //start
+                $('#table3').DataTable({
+                "aaSorting": [],
+                columnDefs: [{
+                orderable: false,
+                targets: 5
+                }]
+                });
+            //end
           
             });
         </script>
     </body>
-
 </html>

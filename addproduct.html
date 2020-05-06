@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Admin - Plasto</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    
+        <!----image croping styles---->
+        <link href="https://foliotek.github.io/Croppie/croppie.css" rel="stylesheet" />
+
+        <style>
+            label.cabinet{
+                display: inline-block;
+                cursor: pointer;
+                position: relative;
+                width: 180px;
+                text-align: center;
+            }
+            
+            label.cabinet input.file{
+                position: relative;
+                height: 100%;
+                width: auto;
+                opacity: 1;
+                -moz-opacity: 0;
+                filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+                margin-top:-30px;
+            }
+            
+            #upload-demo{
+                width: 250px;
+                height: 250px;
+                padding-bottom:25px;
+            }
+            .cabinet > figure > figcaption {
+                position: absolute;
+                bottom: 0;
+                color: #fff;
+                width: 100%;
+                padding-left: 9px;
+                padding-bottom: 5px;
+                text-shadow: 0 0 10px #000;
+            }
+                    
+            .cabinet  svg{
+                color: red;
+            }
+        </style>
+    
+    </head>
+    
+    <body class="sb-nav-fixed">
+        
+<!---------------------------------------Top Navbar Start----------------------------------------------->
+
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">SCANTRACK</a>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 menu-btn" id="sidebarToggle" href="#">
+                <img src="images/menu.png">
+            </button>
+            <p class="plant-namae">PLASTO MANUFACTURING PLANT</p>
+            
+            <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <div class="input-group-append">
+                    </div>
+                </div>
+            </form>
+
+            <ul class="navbar-nav ml-auto ml-md-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle top-nav-bar" id="userDropdown" href="#" role="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/notification.png">&nbsp;<span class="txthid">Notification</span> 
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right drop-remove" aria-labelledby="userDropdown">
+                        <a class="dropdown-item note-unseen" href="#">Updates on order</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item note-unseen" href="#">Product updated succeesfuly</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item note-unseen" href="#">Invoice received</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item note-seen" href="#">Order status updates</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle top-nav-bar" id="userDropdown" href="#" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/user.png">&nbsp;<span class="txthid">Manish</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Update Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Password Reset</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            
+        </nav>
+        
+<!---------------------------------------Top Navbar End-------------------------------------------------->
+        
+<!------------------------------------entire page start---------------------------------------------------->
+        
+<!---------------------------------------Side Navbar Start----------------------------------------------->
+
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <img src="images/icon_client.png" style="width: 100px;height: 100px;border-radius: 50%;margin: 40px auto 40px 16px;">
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/dashboard.png">
+                                </div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link" href="product.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/product.png">
+                                </div>
+                                Product
+                            </a>
+                            <a class="nav-link" href="qrcode.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/qr-code.png">
+                                </div>
+                                QR Code
+                            </a>
+                            <a class="nav-link" href="consumables.html">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/consumables.png">
+                                </div>
+                                Consumables
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/settings.png">
+                                </div>
+                                Settings
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#">Company profile</a>
+                                    <a class="nav-link" href="#">point Of Contact</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/invoice.png">
+                                </div>
+                                Invoice
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon">
+                                    <img src="images/logout.png">
+                                </div>
+                                LogOut
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        
+<!-----------------------------------------------Side Navbar End------------------------------------------------>
+            
+<!-----------------------------------------------Body content start----------------------------------------------->
+        
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">Create Product</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active brdcmb">
+                                <a href="index.html">Dashboard</a>&nbsp;/&nbsp;<a href="product.html">Product</a>&nbsp;/&nbsp;<a href="#">Create Product</a>
+                            </li>
+                        </ol>
+                        
+<!---------------------------------------------Conformation msg start---------------------------------------------->
+                        <div class="card mb-4 conf-msg-unhide">
+                            <div class="card-body">Your Product has been successfully added. You will be redirected to dashboard shortly, please wait.</div>
+                        </div>
+
+<!---------------------------------------------Conformation msg end---------------------------------------------->
+
+                    
+<!-----------------------------------------------table 1 start----------------------------------------------------->
+
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Create Product</div>
+                            <div class="card-body">
+                                <div class="container-addnew-p">
+                                    <form action="#">
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="PID">Product ID</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <input type="text" id="fname" name="firstname" placeholder="Comes from DB">
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="Product-name">Product Name</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <input type="text" id="lname" name="lastname" placeholder="Product ABC">
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="ptype">Product Type</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="Producy-Type" name="Product">
+                                                    <option value="biobag">Bio Bags</option>
+                                                    <option value="fmcg">FMCG</option>
+                                                    <option value="nandinimilk">Nandini Milk</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="Porduct-sub-type">Product Sub Type</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <input type="text" id="P-sub-type" name="lastname" placeholder="Enter Subtype">
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="Product-unit">Product Unit</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="Product-unit" name="lastname">
+                                                    <option value="Ltr">Ltr</option>
+                                                    <option value="Kg">Kg</option>
+                                                    <option value="piece">Piece</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="Product-color">Product Color</label>
+                                            </div>
+                                                <div class="col-75 add-p75">
+                                                    <select id="product-color" name="lastname">
+                                                        <option value="red">Red</option>
+                                                        <option value="blue">Blue</option>
+                                                        <option value="green">Green</option>
+                                                        <option value="none">None</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                        
+                <!------------image crop start--------------->
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                            <label for="Product-s-image">Product sample Image</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <label class="cabinet center-block">
+                                                    <figure>
+                                                        <img src="" class="gambar img-responsive img-thumbnail" id="item-img-output" />
+<!--                                                        <figcaption><i class="fa fa-camera"></i></figcaption>-->
+                                                    </figure>
+                                                    <input type="file" class="item-img file center-block" name="file_photo"/>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    <!----Image module design after select START--->
+        
+        
+                                        <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <!--                <h4 class="modal-title" id="myModalLabel">Edit Photo</h4>-->
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div id="upload-demo" class="center-block"></div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        <button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    <!----Image module design after select END---->
+
+                <!-----------image crop end--------------->
+
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="certification">Certification</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <input type="text" id="certificate" name="lastname" placeholder="Single image / Multiple Image / pdf upload">
+                                            </div>
+                                        </div>
+                                        <div class="product-bt-cntr">
+                                            <a href="#" class="btn-add-p-create" onclick="alert('Created Succefully')">Create</a>
+                                            <a href="product.html" class="btn-add-p-cancel">Cancel</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+<!-----------------------------------------------table 1 end------------------------------------------------------->
+
+                    </div>
+
+                </main>
+            
+<!-----------------------------------------------footer start------------------------------------------------------>
+
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ScanTrack 2020</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            
+<!-----------------------------------------------footer end--------------------------------------------------------->
+            
+            </div>
+            
+<!-----------------------------------------------Body content end----------------------------------------------->
+
+        </div>
+        
+<!-----------------------------------------------entire page end---------------------------------------------------->
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/datatables-demo.js"></script>
+
+        <script src="https://foliotek.github.io/Croppie/croppie.js"></script>
+        
+        <script>
+        // Start upload preview image
+            $(".gambar").attr("src", "https://user.gadjian.com/static/images/personnel_boy.png");
+						var $uploadCrop,
+						tempFilename,
+						rawImg,
+						imageId;
+						function readFile(input) {
+				 			if (input.files && input.files[0]) {
+				              var reader = new FileReader();
+					            reader.onload = function (e) {
+									$('.upload-demo').addClass('ready');
+									$('#cropImagePop').modal('show');
+						            rawImg = e.target.result;
+					            }
+					            reader.readAsDataURL(input.files[0]);
+					        }
+					        else {
+						        swal("Sorry - you're browser doesn't support the FileReader API");
+						    }
+						}
+
+						$uploadCrop = $('#upload-demo').croppie({
+							viewport: {
+								width: 150,
+								height: 200,
+							},
+							enforceBoundary: false,
+							enableExif: true
+						});
+						$('#cropImagePop').on('shown.bs.modal', function(){
+							// alert('Shown pop');
+							$uploadCrop.croppie('bind', {
+				        		url: rawImg
+				        	}).then(function(){
+				        		console.log('jQuery bind complete');
+				        	});
+						});
+
+						$('.item-img').on('change', function () { imageId = $(this).data('id'); tempFilename = $(this).val();
+																										 $('#cancelCropBtn').data('id', imageId); readFile(this); });
+						$('#cropImageBtn').on('click', function (ev) {
+							$uploadCrop.croppie('result', {
+								type: 'base64',
+								format: 'jpeg',
+								size: {width: 150, height: 200}
+							}).then(function (resp) {
+								$('#item-img-output').attr('src', resp);
+								$('#cropImagePop').modal('hide');
+							});
+						});
+				// End upload preview image
+        </script>
+        
+        <script>
+            $(document).ready(function () {
+                //start
+                $('#dataTable4').DataTable({
+                  "aaSorting": [],
+                  columnDefs: [{
+                  orderable: false,
+                  targets: 3
+                  }]
+                });
+               //end
+          
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
