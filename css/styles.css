@@ -10328,6 +10328,18 @@ input[type=submit]:hover {
 
 /*****************custom css mani starts******************/
 
+/***************side bar user image styles start*********************/
+
+.sidebar-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 40px auto 40px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/***************side bar user image styles end*********************/
+
 .btn-add-p-create {
   background-color: #4CAF50;
   border: none;
@@ -10403,6 +10415,9 @@ input[type=submit]:hover {
 }
 
 /***************crop image styles*********************/
+
+
+
 /***************crop image styles*********************/
 .cons-del img{
     width: 25px;
@@ -10410,10 +10425,12 @@ input[type=submit]:hover {
 }
 /***************crop image styles*********************/
 
+/*
 .image-only-crop label.cabinet{
 	display: block;
 	cursor: pointer;
 }
+*/
 
 .image-only-crop label.cabinet input.file{
 	position: relative;
@@ -10438,6 +10455,43 @@ input[type=submit]:hover {
     padding-left: 9px;
     padding-bottom: 5px;
     text-shadow: 0 0 10px #000;
+}
+
+label.cabinet{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 180px;
+    text-align: center;
+}
+
+label.cabinet input.file{
+    position: relative;
+    height: 100%;
+    width: auto;
+    opacity: 1;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    margin-top:-30px;
+}
+
+#upload-demo{
+    width: 250px;
+    height: 250px;
+    padding-bottom:25px;
+}
+.cabinet > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding-left: 9px;
+    padding-bottom: 5px;
+    text-shadow: 0 0 10px #000;
+}
+
+.cabinet  svg{
+    color: red;
 }
 /***************crop image styles*********************/
 
@@ -10541,8 +10595,4 @@ input[type=submit]:hover {
         margin-top: 20px !important;
     }
 }
-
-
-
-
 
