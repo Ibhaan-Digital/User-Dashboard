@@ -8,8 +8,11 @@
         <meta name="author" content=""/>
         <title>Admin - Plasto</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+        <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="js/all.min.js" crossorigin="anonymous"></script>
+    
+        <!----image croping styles---->
+        <link href="css/croppie.css" rel="stylesheet" />
     </head>
     
     <body class="sb-nav-fixed">
@@ -215,14 +218,44 @@
                                                 </select>
                                             </div>
                                         </div>
+                <!------------image crop start--------------->
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
                                                 <label for="Product-s-image">Product sample Image</label>
                                             </div>
                                             <div class="col-75 add-p75">
-                                                <input type="text" id="product-sample-image" name="lastname" placeholder="image upload">
+                                                <label class="cabinet center-block">
+                                                    <figure>
+                                                        <img src="" class="gambar img-responsive img-thumbnail" id="item-img-output" />
+                                                    </figure>
+                                                    <input type="file" class="item-img file center-block" name="file_photo"/>
+                                                </label>
                                             </div>
                                         </div>
+
+                                    <!----Image module design after select START--->
+        
+        
+                                        <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div id="upload-demo" class="center-block"></div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        <button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    <!----Image module design after select END---->
+
+                <!-----------image crop end--------------->
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
                                                 <label for="certification">Certification</label>
@@ -271,15 +304,17 @@
         
 <!-----------------------------------------------entire page end---------------------------------------------------->
         
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="js/Chart.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/chart-area-demo.js"></script>
         <script src="assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/datatables-demo.js"></script>
+        <script src="js/croppie.js"></script>
+        
         <script>
             $(document).ready(function () {
                 //start
@@ -293,6 +328,60 @@
                //end
           
             });
+        </script>
+        
+        <script>
+        // Start upload preview image
+            $(".gambar").attr("src", "https://user.gadjian.com/static/images/personnel_boy.png");
+						var $uploadCrop,
+						tempFilename,
+						rawImg,
+						imageId;
+						function readFile(input) {
+				 			if (input.files && input.files[0]) {
+				              var reader = new FileReader();
+					            reader.onload = function (e) {
+									$('.upload-demo').addClass('ready');
+									$('#cropImagePop').modal('show');
+						            rawImg = e.target.result;
+					            }
+					            reader.readAsDataURL(input.files[0]);
+					        }
+					        else {
+						        swal("Sorry - you're browser doesn't support the FileReader API");
+						    }
+						}
+
+						$uploadCrop = $('#upload-demo').croppie({
+							viewport: {
+								width: 150,
+								height: 200,
+							},
+							enforceBoundary: false,
+							enableExif: true
+						});
+						$('#cropImagePop').on('shown.bs.modal', function(){
+							// alert('Shown pop');
+							$uploadCrop.croppie('bind', {
+				        		url: rawImg
+				        	}).then(function(){
+				        		console.log('jQuery bind complete');
+				        	});
+						});
+
+						$('.item-img').on('change', function () { imageId = $(this).data('id'); tempFilename = $(this).val();
+																										 $('#cancelCropBtn').data('id', imageId); readFile(this); });
+						$('#cropImageBtn').on('click', function (ev) {
+							$uploadCrop.croppie('result', {
+								type: 'base64',
+								format: 'jpeg',
+								size: {width: 150, height: 200}
+							}).then(function (resp) {
+								$('#item-img-output').attr('src', resp);
+								$('#cropImagePop').modal('hide');
+							});
+						});
+				// End upload preview image
         </script>
     </body>
 </html>
