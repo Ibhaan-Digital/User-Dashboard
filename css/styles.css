@@ -56,6 +56,7 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
+  background-color: #c0c0c0;
 }
 
 body {
@@ -162,6 +163,8 @@ a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
+  font-size: 19px;
+  font-weight: 600;
 }
 a:hover {
   color: #0056b3;
@@ -4559,7 +4562,9 @@ input[type=button].btn-block {
   text-decoration: none;
 }
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: #041F60;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .pagination {
@@ -6136,7 +6141,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #0f1f5d !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -7575,6 +7580,7 @@ button.bg-dark:focus {
 .mt-4,
 .my-4 {
   margin-top: 1.5rem !important;
+    color: #041F60;
 }
 
 .mr-4,
@@ -10098,8 +10104,8 @@ body {
 }
 .sb-topnav .navbar-brand {
   width: 225px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0;
+/*  padding-right: 1rem;*/
   margin: 0;
 }
 .sb-topnav.navbar-dark #sidebarToggle {
@@ -10156,7 +10162,7 @@ body {
 }
 
 .sb-sidenav-dark {
-  background-color: #212529;
+  background-color: #0f1f5d;
   color: rgba(255, 255, 255, 0.5);
 }
 .sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
@@ -10172,7 +10178,8 @@ body {
   color: rgba(255, 255, 255, 0.25);
 }
 .sb-sidenav-dark .sb-sidenav-menu .nav-link:hover {
-  color: #fff;
+  color: #041F60;
+  background-color: #C0C0C0;
 }
 .sb-sidenav-dark .sb-sidenav-menu .nav-link.active {
   color: #fff;
@@ -10258,7 +10265,7 @@ body {
 }
 
 .btn-anp{
-    background-color: DodgerBlue;
+    background-color: #2330ff;
     border: none;
     color: white;
     padding: 12px 16px;
@@ -10334,9 +10341,7 @@ input[type=submit]:hover {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin: 40px auto 40px 16px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto 40px auto;
 }
 /***************side bar user image styles end*********************/
 
@@ -10559,14 +10564,45 @@ label.cabinet input.file{
 
 .brdcmb a{
     text-decoration: none;
-    color: #6c757d;
+    color: #041F60;
+    
 }
 
 .brdcmb a:hover{
-    color: #000000;
+    color: #0476D0;
 }
 
 /***************breadcrumb styles end*********************/
+
+/***************random start*********************/
+.logo img {
+  width: 193px;
+  background: #ccc;
+  border-radius: 5px;
+  height: auto;
+}
+
+.dataTable thead tr {
+  color: darkblue;
+}
+
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before {
+  right: 1em;
+  content: "\2206" !important;
+  color:darkblue;
+  font-weight:800;
+  padding-right:5px;
+}
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
+  right: 0.5em;
+  content: "\2207" !important;
+  color:darkblue;
+  height:20px;
+  font-weight:800;
+}
+
+/***************random end*********************/
 
 /***************my button styles*********************/
 
@@ -10593,6 +10629,12 @@ label.cabinet input.file{
     
     .no-margin-mobile{
         margin-top: 20px !important;
+    }
+    
+    .logo img {
+      width: 130px;
+      height: auto;
+        margin-left: 5px;
     }
 }
 
