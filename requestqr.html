@@ -154,13 +154,27 @@
 <!-----------------------------------------------table 1 start----------------------------------------------------->
 
                         <div class="card mb-4">
-                            <div class="card-header"><i class="fas fa-table mr-1"></i>Create Product</div>
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Request QR Code</div>
                             <div class="card-body">
                                 <div class="container-addnew-p">
                                     <form action="#">
+                                        
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
-                                                <label for="ptype">Product</label>
+                                                <label for="Product-name">Product Name</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="Product-Type" name="pname">
+                                                    <option value="Name1">Name1</option>
+                                                    <option value="Name2">Name2</option>
+                                                    <option value="Name3">Name3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="ptype">Product Type</label>
                                             </div>
                                             <div class="col-75 add-p75">
                                                 <select id="Producy-Type" name="Product">
@@ -170,6 +184,45 @@
                                                 </select>
                                             </div>
                                         </div>
+                                        
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="Porduct-sub-type">Product Sub Type</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="P-sub-type" name="subtype">
+                                                    <option value="Sub1">Sub1</option>
+                                                    <option value="Sub2">Sub2</option>
+                                                    <option value="Sub3">Sub3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="Product-unit">Product Unit</label>
+                                            </div>
+                                            <div class="col-75 add-p75">
+                                                <select id="Product-unit" name="lastname">
+                                                    <option value="Ltr">Ltr</option>
+                                                    <option value="Kg">Kg</option>
+                                                    <option value="piece">Piece</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row-add-p">
+                                            <div class="col-25 add-p25">
+                                                <label for="Product-color">Product Color</label>
+                                            </div>
+                                                <div class="col-75 add-p75">
+                                                    <select id="product-color" name="lastname">
+                                                        <option value="red">Red</option>
+                                                        <option value="blue">Blue</option>
+                                                        <option value="green">Green</option>
+                                                        <option value="none">None</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                        
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
                                                 <label for="machineId">Machine ID</label>
