@@ -172,6 +172,7 @@
                                             </div>
                                         </div>
                                         
+<!--
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
                                                 <label for="ptype">Product Type</label>
@@ -184,7 +185,9 @@
                                                 </select>
                                             </div>
                                         </div>
+-->
                                         
+<!--
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
                                                 <label for="Porduct-sub-type">Product Sub Type</label>
@@ -197,24 +200,38 @@
                                                 </select>
                                             </div>
                                         </div>
+-->
+<!--
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
                                                 <label for="Product-unit">Product Unit</label>
                                             </div>
                                             <div class="col-75 add-p75">
-                                                <input type="text" id="Product-unit" name="lastname" placeholder="Ltr" disabled>
+                                                <select id="Product-unit" name="lastname">
+                                                    <option value="Ltr">Ltr</option>
+                                                    <option value="Kg">Kg</option>
+                                                    <option value="piece">Piece</option>
+                                                </select>
                                             </div>
                                         </div>
+-->
+<!--
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
-                                                <label for="qrquantity">Product Color</label>
+                                                <label for="Product-color">Product Color</label>
                                             </div>
                                                 <div class="col-75 add-p75">
-                                                    <input type="text" id="product-color" name="lastname" placeholder="red" disabled>
+                                                    <select id="product-color" name="lastname">
+                                                        <option value="red">Red</option>
+                                                        <option value="blue">Blue</option>
+                                                        <option value="green">Green</option>
+                                                        <option value="none">None</option>
+                                                    </select>
                                                 </div>
-                                           
                                         </div>
+-->
                                         
+<!--
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
                                                 <label for="machineId">Machine Type</label>
@@ -227,17 +244,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="row-add-p">
-                                            <div class="col-25 add-p25">
-                                                <label for="machineId">File Type</label>
-                                            </div>
-                                            <div class="col-75 add-p75">
-                                                <select id="machineId" name="lastname">
-                                                    <option value="Image">Image</option>
-                                                    <option value="text">Text</option>
-                                                </select>
-                                            </div>
-                                        </div>
+-->
                                         <div class="row-add-p">
                                             <div class="col-25 add-p25">
                                                 <label for="qrquantity">No. of QR Code</label>
@@ -245,6 +252,9 @@
                                             <div class="col-75 add-p75">
                                                 <input type="text" id="certificate" name="lastname" placeholder="In multiples of 1,00,000">
                                             </div>
+                                        </div>
+                                        <div class="product-bt-cntr">
+                                            <a href="#" class="btn-add-p-cancel">&nbsp;Add new parameter&nbsp;</a>
                                         </div>
                                         <div class="product-bt-cntr">
                                             <a href="#" class="btn-add-p-create" onclick="alert('Request Sent')">Request</a>
