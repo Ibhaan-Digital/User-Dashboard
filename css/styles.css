@@ -10325,6 +10325,19 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
+
+.add-p40 {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+}
+
+.add-p60 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+
 /*Clear floats after the columns*/
 .row-add-p:after {
   content: "";
@@ -10334,6 +10347,21 @@ input[type=submit]:hover {
 
 
 /*****************custom css mani starts******************/
+
+/***************request consumables styles start*********************/
+
+.gap-top{
+    margin-top: 7px;
+}
+/***************request consumables styles end*********************/
+
+/***************user poc styles start*********************/
+.edit-icons-images img{
+    margin: 0 7px;
+    width: 25px;
+    height:25px; 
+}
+/***************user poc styles end*********************/
 
 /***************side bar user image styles start*********************/
 
@@ -10576,7 +10604,7 @@ label.cabinet input.file{
 
 /***************random start*********************/
 .logo img {
-  width: 193px;
+  width: 190px;
   background: #ccc;
   border-radius: 5px;
   height: auto;
