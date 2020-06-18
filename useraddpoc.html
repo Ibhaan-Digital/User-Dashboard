@@ -142,16 +142,14 @@
 <!-----------------------------------------------Side Navbar End------------------------------------------------>
             
             
-            
-            
-            
             <div id="layoutSidenav_content">
+                
                 <main>
                     <div class="container-fluid">
                         <h3 class="mt-4">Edit Profile</h3>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active brdcmb">
-                                <a href="index.html">Dashboard</a>&nbsp;/&nbsp;<a href="userprfile.html">Company Profile</a>&nbsp;/&nbsp;<a href="userprfile.html">Profile</a>
+                                <a href="index.html">Dashboard</a>&nbsp;/&nbsp;<a href="userprfile.html">Company Profile</a>&nbsp;/&nbsp;<a href="userpoc.html">Point Of Contact</a>
                             </li>
                         </ol>
                         <div class="card mb-4">
@@ -159,14 +157,14 @@
                                 <div class="col">
                                     <div class="row">
                                         <div class="col mb-3">
-                                        
+                                            
                                                 <div class="card-body">
                                                     <div class="e-profile">
                                                         <div class="row">
                                                             <div class="col-12 col-sm-auto mb-3">
                                                                 <div class="mx-auto" style="width: 140px;">
                                                                     <div class="d-flex justify-content-center align-items-center rounded" style="height: 140px; background-color: rgb(233, 236, 239);">
-                                                                        <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
+                                                                    <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -189,8 +187,8 @@
                                                             </div>
                                                         </div>
                                                         <ul class="nav nav-tabs">
-                                                            <li class="nav-item"><a href="userprfile.html" class="active nav-link usercolor">Profile</a></li>
-                                                            <li class="nav-item"><a href="userpoc.html" class="nav-link usercolor">Point Of Contact</a></li>
+                                                            <li class="nav-item"><a href="userprfile.html" class="nav-link usercolor">Profile</a></li>
+                                                            <li class="nav-item"><a href="userpoc.html" class="active nav-link usercolor">Point Of Contact</a></li>
                                                             <li class="nav-item"><a href="userpass.html" class="nav-link usercolor">Password</a></li>
                                                         </ul>
                                                         <div class="tab-content pt-3">
@@ -198,20 +196,50 @@
                                                                 <form class="form" novalidate="" id="">
                                                                     <div class="row">
                                                                         <div class="col">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    
+                                                                    
+                                                                    <div class="card mb-4">
+<!--
+                                                                        <div class="card-header">
+                                                                            <a href="#" class="btn-poc">Add new POC</a>
+                                                                        </div>
+-->
+                                                                        <div class="card-body">
+                                                                            
+                                                                            
                                                                             <div class="row">
                                                                                 <div class="col">
                                                                                     <div class="form-group">
-                                                                                        <label>Company Name</label>
-                                                                                        <input class="form-control" type="text" name="name" placeholder="Plasto" value="plasto">
+                                                                                        <label>Full Name</label>
+                                                                                        <input class="form-control" type="text" name="name" placeholder="John Smith" value="John Smith">
                                                                                     </div>
                                                                                 </div>
-                                                                                <!--div class="col">
+                                                                                <div class="col">
                                                                                     <div class="form-group">
-                                                                                        <label>Username</label>
-                                                                                        <input class="form-control" type="text" name="username" placeholder="johnny.s" value="johnny.s">
+                                                                                        <label>Phone No.</label>
+                                                                                        <input class="form-control" type="number" name="username" placeholder="1234567890" value="johnny.s">
                                                                                     </div>
-                                                                                </div-->
+                                                                                </div>
                                                                             </div>
+                                                                            
+                                                                            <div class="row">
+                                                                                <div class="col">
+                                                                                    <div class="form-group">
+                                                                                        <label>Designation</label>
+                                                                                        <input class="form-control" type="text" name="name" placeholder="Admin" value="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="form-group">
+                                                                                        <label>Alternative Phone No.</label>
+                                                                                        <input class="form-control" type="number" name="username" placeholder="2345678901" value="johnny.s">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
                                                                             <div class="row">
                                                                                 <div class="col">
                                                                                     <div class="form-group">
@@ -220,43 +248,46 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row">
-                                                                                <div class="col">
-                                                                                    <div class="form-group">
-                                                                                        <label>Phone number</label>
-                                                                                        <input class="form-control" type="text" placeholder="88998 89988">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+                                                                            
+<!--
                                                                             <div class="row">
                                                                                 <div class="col mb-3">
                                                                                     <div class="form-group">
-                                                                                        <label>Company Address</label>
+                                                                                        <label>Address</label>
                                                                                         <textarea class="form-control" rows="5" placeholder="Address"></textarea>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+-->
+                                                                            
+                                                                            
+                                                                            
                                                                         </div>
                                                                     </div>
+                                                                    
                                                                     <div class="row">
-                                                                        <div class="userprobut">
+                                                                        <div class="userprobut"> 
                                                                             <a href="#" class="btn-add-p-create" onclick="alert('Submitted Succefully')">Submit</a>
                                                                             <a href="product.html" class="btn-add-p-cancel">Cancel</a>
                                                                         </div>
                                                                     </div>
+                                                                    
                                                                 </form>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                        
+                                           
                                         </div>
                                     </div>
                                 </div>
-                            </div>              
+                            </div>
                         </div>
                     </div>
                 </main>
+                                                      
+                
+                
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
@@ -271,6 +302,7 @@
                 </footer>
             </div>
         </div>
+        
         <script src="js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
