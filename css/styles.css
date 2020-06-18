@@ -10432,6 +10432,11 @@ input[type=submit]:hover {
     text-align: center;
 }
 
+.userprobut{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 .sb-nav-link-icon img{
     width: 30px;
     height: 30px;
@@ -10585,6 +10590,14 @@ label.cabinet input.file{
     color: green;
     font-size: 16px;
     font-weight: bold;
+    width: 30%;
+    position: absolute;
+    right: 24px;
+    top: 10px;
+}
+
+.hiddenmsg{
+    display: none;
 }
 /***************qrcode msg styles end*********************/
 
@@ -10630,7 +10643,31 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
   font-weight:800;
 }
 
+ .mynotification .badge {
+  position: absolute;
+  top: 5px;
+  right: 131px;
+  padding: 5px 7px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+                font-size: 10px;
+}
 /***************random end*********************/
+
+/******************button style start**************/
+
+.remove-topmargin{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+/******************button style end**************/
+
+/******************general table start**************/
+.table-bottommar{
+    margin-bottom: 0;
+}
+/******************general table end**************/
 
 /***************my button styles*********************/
 
